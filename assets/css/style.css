@@ -1,3 +1,34 @@
-* {
-    box-sizing: border-box;
+header {
+    display:flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 20px;
+};
+
+.main-screen {
+    display: flex;
+    justify-content: center;
+}
+
+h1, .instructions {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.space {
+    padding: 45px;
+}
+
+.select {
+    font-size: 30px;
+}
+
+.button-holder {
+    text-align: center;
+}
+
+.select:hover {
+    background-color: var(--clr--secondary);
+    cursor: pointer;
 }
