@@ -32,3 +32,13 @@ h1, .instructions {
     background-color: var(--clr--secondary);
     cursor: pointer;
 }
+
+.question-container {
+    text-align: center;
+}
+
+.quiz-answer {
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+}
