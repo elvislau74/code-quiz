@@ -32,8 +32,7 @@ h1, .instructions {
     text-align: center;
 }
 
-.select:hover {
-    background-color: var(--clr--secondary);
+.select:hover, .options:hover {
     cursor: pointer;
 }
 
@@ -50,4 +49,9 @@ h1, .instructions {
 .answer-container {
     display: flex;
     justify-content: center;
+}
+
+.options {
+    padding: 15px;
+    font-size: 20px;
 }
