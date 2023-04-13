@@ -80,7 +80,18 @@ var startQuiz = function(){
     //     questionEL = allQuestions[i].question
 
     // }
+    startTimer();
 };
+
+function startTimer(){
+    timerInterval = setInterval(function() {
+       time--; 
+       timeEL.textContent = "Time: " + time;
+       if (timer === 0){
+        clearInterval(timerInterval);
+       }
+    }, 1000);
+}
 
 // answer4.addEventListener("click", function(){
 
