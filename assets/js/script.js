@@ -2,10 +2,11 @@ var startEL = document.querySelector(".select");
 var timeEL = document.querySelector(".time");
 var scoreEL = document.querySelector(".score");
 var questionEL = document.querySelector(".question-container");
-var answer1 = document.querySelectorAll(".answer-1");
-var answer2 = document.querySelectorAll(".answer-2");
-var answer3 = document.querySelectorAll(".answer-3");
-var answer4 = document.querySelectorAll(".answer-4");
+var answer1 = document.querySelector(".answer-1");
+var answer2 = document.querySelector(".answer-2");
+var answer3 = document.querySelector(".answer-3");
+var answer4 = document.querySelector(".answer-4");
+var answersEL = document.querySelector(".answer-container")
 
 var highScores = [];
 var score = 0;
@@ -53,4 +54,35 @@ var questionSix = {
     choices: [],
 };
 
-// startEL.addEventListener(click, );
+var allQuestions = [
+    questionOne,
+    questionTwo,
+    questionThree,
+    questionFour,
+    questionFive,
+    questionSix
+]
+    console.log(allQuestions[0].question)
+var startQuiz = function(){
+    console.log("start function");
+    questionEL.classList.toggle("hide");
+    answersEL.classList.toggle("hide");
+    document.querySelector(".main-screen").classList.toggle("hide");
+
+    questionEL.textContent = allQuestions[0].question;
+    answer1.textContent = "1. " + allQuestions[0].choices[0]
+    answer2.textContent = "2. " + allQuestions[0].choices[1]
+    answer3.textContent = "3. " + allQuestions[0].choices[2]
+    answer4.textContent = "4. " + allQuestions[0].choices[3]
+    
+
+    // for(i = 0; i < allQuestions.length; i++){
+    //     questionEL = allQuestions[i].question
+
+    // }
+};
+
+// answer4.addEventListener("click", function(){
+
+// });
+startEL.addEventListener("click", startQuiz);
