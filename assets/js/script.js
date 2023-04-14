@@ -65,6 +65,8 @@ var allQuestions = [
     console.log(allQuestions[0].question)
 var startQuiz = function(){
     console.log("start function");
+    
+    /** Toggle found from stack overflow */
     questionEL.classList.toggle("hide");
     answersEL.classList.toggle("hide");
     document.querySelector(".main-screen").classList.toggle("hide");
